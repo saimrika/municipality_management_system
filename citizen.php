@@ -121,6 +121,7 @@ $result=mysqli_num_rows($data);
 $data=mysqli_fetch_object($data);
 if ( $result == 0){
     $err="No citizen found. Please enter the correct Citizen ID";
+    // header('location: index.html');
 }
 elseif($data->B_Day != $birthdate){
     $err="Please enter the correct birth date";

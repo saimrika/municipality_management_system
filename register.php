@@ -116,9 +116,13 @@ span.psw {
         
     <button type="submit" name="submit">Login</button>
   </div>
-
+  
   <div class="container" style="background-color: aquamarine;">
-    <button type="button" class="cancelbtn" onclick="document.location='index.html'">Cancel</button>
+    <center>
+    <button type="button" class="cancelbtn" onclick="document.location='adminpage.php'">Back</button>
+    <button type="button" class="cancelbtn" onclick="document.location='adminpage.php'">Cancel</button>
+    </center>
+    
   </div>
 
 

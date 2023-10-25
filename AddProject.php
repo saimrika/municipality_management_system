@@ -72,7 +72,7 @@
             display: flex;
             justify-content: center;
         }
-        button {
+        .button1 {
       background-color: #4CAF50;
       color: white;
       padding: 14px 20px;
@@ -81,7 +81,26 @@
       cursor: pointer;
      
     }
-        
+        .button2 {
+    background-color: #04AA6D;
+    /* background: linear-gradient(90deg, rgba(9, 112, 9, 0.473),green); */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    }
+
+    button:hover {
+    opacity: 0.8;
+    }
+
+    .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    }
     input[type=text],
     input[type=int] {
       width: 100%;
@@ -135,7 +154,8 @@
      <input type="date" name="end" required>
     </span>
     <br>
-    <button type="submit" name="submit"> Submit</button>
+    <button type="submit" class="button1" name="submit"> Submit</button>
+    <button type="button" class="button2 cancelbtn" onclick="document.location='adminpage.php'">Cancel</button>
 </form>
 <?php
     $host="localhost";
